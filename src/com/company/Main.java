@@ -1,4 +1,4 @@
-package ba.unsa.etf.rs;
+package com.company;
 
 import java.util.Scanner;
 
@@ -17,12 +17,13 @@ public class Main {
         int n;
         Scanner ulaz=new Scanner(System.in);
         System.out.println("Unesite do kojeg broja zelite ispis");
-        n=next.UlazInt();
-        for(int i=0;i<n;i++){
-            if(i%sumaCifara==0)
+        n=ulaz.nextInt();
+        for(int i=1;i<n;i++){
+            if((i%sumaCifara(i))==0) {
                 System.out.println(i);
 
         }
-	// write your code here
+
     }
+}
 }
